@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+    <nav class="menu-lateral">
+        <img class="logo" src="/src/img/logo.png">
+        <ul>
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="/src/pages/pageArquivos.html" class="menu-active">Meus Arquivos</a></li>
+            <li><a href="#">Usuários da Casa</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li><a href="#">Relatório</a></li>
+        </ul>
+    </nav>
+    <main class="conteudo">
+        <h1>Seus Arquivos</h1>
+
+        <div class="cards-container">
+            <div class="cards" onclick="inserirJson()"  title="Clique para adicionar um novo membro">
+                <img class="cards-img" src="/src/img/icone_addpesssoas.png">
+            </div>
+            <div class="cards" onclick="inserirSomJson()"  title="Clique para adicionar uma nova cantiga">
+                <img class="cards-img" src="/src/img/icone_sound.png">
+            </div>
+            <div class="cards" onclick="inserirRezaJson()"  title="Clique para adicionar uma nova reza">
+                <img class="cards-img" src="/src/img/icone_birds.png">
+            </div>
+            <div class="cards" onclick="inserirObrigacaoJson()"  title="Clique para adicionar uma nova Obrigação">
+                <img class="cards-img" src="/src/img/icone_obrigacao.png">
+            </div>
+            <div class="cards" onclick="inserirCalendarioJson()"  title="Clique para adicionar uma nova atualização">
+                <img class="cards-img" src="/src/img/icone_calendar.png">
+            </div>
+            <div class="cards">
+                <img class="cards-img" src="/src/img/icone_delete.png">
+            </div>
+        </div>
+        <div class="container-form">
+            <div id="form-inserir">
+            </div>
+            <div id="teste-demonst">
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
